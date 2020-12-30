@@ -47,10 +47,10 @@ export async function runPreserve() {
       'A dependency change is detected, and the dependency is being installed to ensure that the dependency is consistent! (Tip: The project will be executed for the first time)！'
     );
     try {
-      await sh('npm run bootstrap ', {
-        async: true,
-        nopipe: true,
-      });
+      // await sh('npm run bootstrap ', {
+      //   async: true,
+      //   nopipe: true,
+      // });
 
       successConsole('Dependency installation is successful, start running the project！');
 
